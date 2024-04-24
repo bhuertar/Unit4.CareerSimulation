@@ -31,9 +31,7 @@ const createPost = async() => {
 
 const main = async () => {
   await createUser();
-  console.log('Users Created');
   await createPost();
-  console.log('Post Created');
 };
 
 main()
@@ -45,3 +43,5 @@ main()
     await prisma.$disconnect();
     process.exit(1);
   });
+
+// module.exports = prisma;
